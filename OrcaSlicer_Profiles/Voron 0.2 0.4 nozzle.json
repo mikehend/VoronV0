@@ -1,0 +1,22 @@
+{
+    "auxiliary_fan": "1",
+    "from": "User",
+    "inherits": "Voron 0.1 0.4 nozzle",
+    "is_custom_defined": "0",
+    "machine_end_gcode": "PRINT_END\n",
+    "machine_max_speed_x": [
+        "300",
+        "200"
+    ],
+    "machine_max_speed_y": [
+        "300",
+        "200"
+    ],
+    "machine_start_gcode": "STOP_LED_EFFECTS\nNEOPIXEL_DISPLAY LED=\"main_mcu_neopixel\" TYPE=bed_temp MODE=progress\nSET_LED LED=displayStatus GREEN=1 RED=0 BLUE=0\n\nG28 XY\nM104 S150 ; set temporary nozzle temp to prevent oozing during homing\nM140 S{first_layer_bed_temperature[0]} ; set final bed temp\nG4 S30 ; allow partial nozzle warmup\n\nM190 S[bed_temperature_initial_layer_single]\nM109 S[nozzle_temperature_initial_layer]\nPRINT_START EXTRUDER=[nozzle_temperature_initial_layer] BED=[bed_temperature_initial_layer_single]\n; You can use following code instead if your PRINT_START macro support Chamber and print area bedmesh\n; PRINT_START EXTRUDER=[nozzle_temperature_initial_layer] BED=[bed_temperature_initial_layer_single] Chamber=[chamber_temperature] PRINT_MIN={first_layer_print_min[0]},{first_layer_print_min[1]} PRINT_MAX={first_layer_print_max[0]},{first_layer_print_max[1]}",
+    "name": "Voron 0.2 0.4 nozzle",
+    "nozzle_type": "stainless_steel",
+    "print_host": "192.168.7.157",
+    "printable_height": "118",
+    "printer_settings_id": "Voron 0.2 0.4 nozzle",
+    "version": "1.8.0.0"
+}
