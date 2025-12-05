@@ -1,0 +1,4 @@
+camera="usb"
+#camera_usb_options="-r 640x480 -f 1 -d /dev/v4l/by-id/usb-Alcor_Micro__Corp._USB2.0_WebCamera-video-index0"
+camera_usb_options="-r 640x480 -f 1 -d /dev/v4l/by-id/usb-SYX-230426-XH_SPCA2650_AV_Camera_01.00.00-video-index0"
+camera_http_options="-n -p 8082"
