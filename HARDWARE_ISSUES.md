@@ -1,6 +1,24 @@
-# Hardware Issues - Voron V0
+# Hardware Issues and Maintenance - Voron V0
 
-## Dead 120mm Aux Fan
+## Completed Repairs
+
+### ✅ Bed Thermal Fuse Replacement - 2025-12-06
+**Issue**: Required thermal fuse installation for bed safety
+**Resolution**:
+- Installed 3.33mm OD ferrule-equipped thermal fuse
+- Crimped with Pressmaster ferrule crimper (2.5mm slot)
+- Secured with zip tie to ensure contact with bed bottom
+- Tested successfully: heated to 105°C and maintained stable
+- Heater control verified working correctly
+
+**Status**: COMPLETE - Bed heater operational and safe
+
+### ✅ Old Toolhead Removal - 2025-12-06
+**Status**: Original toolhead removed, ready for Dragon Burner upgrade
+
+## Open Issues
+
+### Dead 120mm Aux Fan
 
 **Date Identified**: 2025-12-06
 
@@ -12,6 +30,7 @@
 3. ✅ Verified cable properly connected to expander board
 4. ✅ Tested fan with external 24V supply - still doesn't spin
 5. ✅ Verified 24V present at back of fan connector
+6. ✅ Measured fan resistance: infinite (open circuit - confirmed dead)
 
 **Conclusion**: Fan motor is dead - needs replacement
 
