@@ -5,9 +5,10 @@
 backup_*/
 *_backup/
 
-# Klipper temporary files
+# Klipper temporary and backup files
 *.bkp
 *~
+printer-[0-9]*_[0-9]*.cfg
 
 # OS files
 .DS_Store
