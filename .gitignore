@@ -1,0 +1,14 @@
+# Claude Code internal files
+.claude/
+
+# Backup directories
+backup_*/
+*_backup/
+
+# Klipper temporary files
+*.bkp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
